@@ -15,6 +15,8 @@ class PicsController < ApplicationController
 
 
 	def create
+		# Code to document what you're doing
+		# Yolo
 		Pic.create( pic_params )
 		redirect_to pics_path
 	end
