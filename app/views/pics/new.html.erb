@@ -1,5 +1,5 @@
 <div class="fishbox span6 offset3 text-center">
-	
+
 	<h1 class="custom-h1">
 		Submit Your Pic
 	</h1>
@@ -8,10 +8,16 @@
 		<%= simple_form_for @pic do |f| %>
 			<%= f.input :lesson, label: 'Which Lesson is this?', placeholder: '1 or 2 or 3, etc.' %>
 			<br/>
+
 			<%= f.input :emotion, label: 'How did you feel?', placeholder: 'Stoked, happy, good, etc.' %>
 			<br/>
 			<%= f.input :learned, label: 'What did you learn?', placeholder: 'HTML, CSS3, Rails, Ruby, Github, etc.' %>
 			<br/>
+
+			<%= f.input :picture, label: 'Upload a pretty picture' %>
+
+			<br />
+
 			<%= f.button :submit, 'Save', :class => 'btn btn-large btn-warning' %>
 		<% end %>
 	</h2>
